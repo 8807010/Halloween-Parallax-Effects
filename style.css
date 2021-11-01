@@ -9,6 +9,7 @@
 
 body {
   background: #010405;
+  min-width: 360px;
 }
 
 section {
@@ -19,20 +20,20 @@ section {
 }
 
 section::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to top,#010405,transparent);
-    z-index: 10000;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #010405, transparent);
+  z-index: 10000;
 }
 
 section img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
 }
 
 .sec {
@@ -52,4 +53,64 @@ section img {
   font-size: 1.2em;
   line-height: 1.5em;
   font-family: consolas;
+}
+
+@media (max-width: 1800px) {
+  .sec {
+    padding: 0 70px 70px;
+  }
+}
+
+@media (max-width: 1700px) {
+  section {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 1350px) {
+  section {
+    height: 70vh;
+  }
+
+  .sec {
+    padding: 0 50px 50px;
+  }
+}
+
+@media (max-width: 1150px) {
+  section {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 970px) {
+  section {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    height: 40vh;
+  }
+}
+
+@media (max-width: 650px) {
+  section {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 500px) {
+  section {
+    height: 20vh;
+  }
+
+  .sec h2 {
+    font-size: 3em;
+  }
+
+  .sec {
+    padding: 0 30px 30px;
+  }
 }
